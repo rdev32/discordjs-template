@@ -1,4 +1,4 @@
-// this file must be run once, its only for registering commands to the bot cloud
+// this file must be run once, its only for registering commands a server
 import fs from 'node:fs'
 import { REST } from '@discordjs/rest'
 import { Routes } from 'discord-api-types/v9'
@@ -15,7 +15,16 @@ import 'dotenv/config'
 
     const rest = new REST({ version: '9' }).setToken(process.env.TOKEN)
 
-    rest.put(Routes.applicationGuildCommands(process.env.CLIENT, process.env.GUILD), { body: commands })
-    .then(() => { console.log('Successfully registered application commands.')})
-    .catch(console.error)
+    try {
+        console.log('Started refreshing application (/) commands.')
+
+        await rest.put(Routes.applicationGuildCommands(
+            process.env.CLIENT, 
+            process.env.GUILD), 
+            { body: commands })
+
+        console.log('Successfully reloaded application (/) commands.')
+    } catch (error){
+        console.error(error)
+    }
 })()
