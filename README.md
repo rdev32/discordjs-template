@@ -11,6 +11,7 @@ En `package.json` tendras los siguientes comandos disponibles.
 - `npm start`
 - `npm run build`
 - `npm run dev`
+Utiliza `node build/register.js` para sincornizar los comandos con la API de Discord.
 
 ### Requerimientos ###
-Debido a que este proyecto utiliza javascript moderno ES6+ con Babel como transpilador, deberas tener conocimientos previos en estos. Ya que lo que corre Node.js es javascript antiguo, lo transpilado a este, esta en la carpeta `build`. Este proyecto es compactible con las ultimas versiones LTS de Node.js
+Debido a que este proyecto utiliza javascript moderno ES6+ con Babel como transpilador, deberas tener conocimientos previos en estos. Como Node.js entiende `CommonJS` la ejecucion de tu proyecto se ubicara en la carpeta `build`. 
