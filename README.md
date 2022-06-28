@@ -10,7 +10,7 @@ Siguiendo el tutorial de la [guia oficial](https://discordjs.guide/) debes utili
 En `package.json` tendras los siguientes comandos disponibles.
 - `npm start`
 - `npm run build`
-- `npm run dev`
+- `npm run dev`<br>
 Utiliza `node build/register.js` para sincornizar los comandos con la API de Discord.
 
 ### Requerimientos ###
