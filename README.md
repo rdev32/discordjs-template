@@ -1,5 +1,5 @@
-## Plantilla para crear bots de discord ##
-Una plantilla para empezar con cualesquier tipo de bot para Discord.
+## Discord Bot Template ##
+Una plantilla para arrancar con tu bot para Discord.
 
 ### Estrutura ###
 Siguiendo el tutorial de la [guia oficial](https://discordjs.guide/) debes utilizar la estructura:
@@ -10,7 +10,8 @@ Siguiendo el tutorial de la [guia oficial](https://discordjs.guide/) debes utili
 En `package.json` tendras los siguientes comandos disponibles.
 - `npm start`
 - `npm run build`
-- `npm run dev`<br>
+- `npm run dev`
+
 Utiliza `node build/register.js` para sincornizar los comandos con la API de Discord.
 
 ### Requerimientos ###
