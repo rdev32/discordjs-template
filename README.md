@@ -13,9 +13,9 @@ No olvides colocar tu archivo `.env` en `/root` y llenar las credenciales con:
 - `CLIENT` para el id registrado de tu bot de Discord.
 
 En `package.json` tendras los siguientes comandos disponibles.
-- `npm start`
-- `npm run build`
-- `npm run dev`
+- `npm start` lanza el proyecto
+- `npm run build` retranspila el proyecto
+- `npm run dev` lanza el proyecto en modo de desarrollo
 
 Utiliza `node build/register.js` para sincronizar los comandos con la API de Discord.
 
