@@ -1,5 +1,5 @@
 ## Discord Bot Template ##
-Una plantilla para arrancar con tu bot para Discord.
+Una plantilla para arrancar con tu bot para Discord
 
 ### Estrutura ###
 Siguiendo el tutorial de la [guia oficial](https://discordjs.guide/) debes utilizar la estructura:
