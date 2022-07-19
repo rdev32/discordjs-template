@@ -5,21 +5,23 @@
   "scripts": {
     "start": "node build/index.js",
     "build": "babel src --out-dir build",
-    "dev": "nodemon -e js -w src --exec \"npm run build && npm start\""
+    "dev": "nodemon -e js -w src --exec \"npm run build && npm start\"",
+    "link": "node build/generate.js",
+    "register": "node build/register.js"
   },
   "dependencies": {
-    "@discordjs/builders": "^0.12.0",
-    "@discordjs/rest": "^0.3.0",
-    "discord-api-types": "^0.31.1",
-    "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "@discordjs/builders": "^1.0.0",
+    "@discordjs/rest": "^1.0.0",
+    "discord-api-types": "^0.36.2",
+    "discord.js": "^14.0.2",
+    "dotenv": "^16.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.9",
-    "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/runtime": "^7.17.9",
-    "nodemon": "^2.0.15"
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/runtime": "^7.18.9",
+    "nodemon": "^2.0.19"
   }
 }
