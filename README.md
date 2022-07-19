@@ -1,23 +1,25 @@
-## Discord Bot Template ##
-Una plantilla para arrancar con tu bot para Discord
+# Discord Bot Template #
+Este plantilla utiliza javascript moderno ES6+ con Babel como transpilador, para una manera de soportar los estandares modernos. Debido a que Discord constantemente cambia las funciones de su API, este repositorio se mantendra actualizado para garantizar la funcionalidad.
 
-### Estrutura ###
-Siguiendo el tutorial de la [guia oficial](https://discordjs.guide/) debes utilizar la estructura:
-- El folder `/commands` es para colocar tus comandos
-- El folder `/events` es para sincronizar los eventos
+## Estrutura ##
+Siguiendo el tutorial de la  debes utilizar la estructura:
+- El folder `/commands` contiene la estructura de y para generar mas comandos.
+- El folder `/events` contiene la estructura de y para crear mas eventos.
 
-### Desarrollo ###
-No olvides colocar tu archivo `.env` en `/root` y llenar las credenciales con:
-- `TOKEN` para la llave generada secreta de tu bot.
+## Desarrollo ##
+### Configuracion ###
+En el archivo `.env` no olvides colocar las [credenciales](https://discord.com/developers/applications):
+- `TOKEN` para token secreto generado de tu bot.
 - `GUILD` para el id de tu servidor de pruebas.
-- `CLIENT` para el id registrado de tu bot de Discord.
+- `CLIENT` para el id del cliente de tu bot de Discord.
 
+### Comandos ###
 En `package.json` tendras los siguientes comandos disponibles.
-- `npm start` lanza el proyecto
-- `npm run build` retranspila el proyecto
-- `npm run dev` lanza el proyecto en modo de desarrollo
+- `npm start` ejecuta el proyecto.
+- `npm run build` retranspila el proyecto.
+- `npm run dev` lanza un watcher para retranspilar y ejecutar el codigo en modo de desarrollo.
+- `npm run link` genera el link de invitacion para agregarlo a tu servidor de pruebas.
+- `npm run register` sincroniza los cambios a tu bot con la API de Discord.
 
-Utiliza `node build/register.js` para sincronizar los comandos con la API de Discord.
-
-### Descripcion ###
-Debido a que este proyecto utiliza javascript moderno ES6+ con Babel como transpilador, deberas tener conocimientos previos en estos. Como Node.js entiende `CommonJS` la ejecucion de tu proyecto se ubicara en la carpeta `build`. 
+## Informacion ##
+Revisa la [guia oficial de Discord](https://discordjs.guide/) para comprender el codigo de este repositorio y revisa la [documentacion](https://discord.js.org/#/docs/) oficial para extender tus conocimientos. 
