@@ -1,25 +1,26 @@
 # Discord Bot Template #
-Este plantilla utiliza javascript moderno ES6+ con Babel como transpilador, para una manera de soportar los estandares modernos. Debido a que Discord constantemente cambia las funciones de su API, este repositorio se mantendra actualizado para garantizar la funcionalidad.
+Este plantilla utiliza javascript moderno ES6. Debido a que Discord constantemente cambia las funciones de su API, este repositorio se mantendra actualizado para garantizar la funcionalidad basica y escalable.
 
 ## Estrutura ##
-Siguiendo el tutorial de la  debes utilizar la estructura:
-- El folder `/commands` contiene la estructura de y para generar mas comandos.
-- El folder `/events` contiene la estructura de y para crear mas eventos.
+Siguiendo el tutorial de la [guia](https://discordjs.guide) debes utilizar la estructura:
+- El folder `/commands` contiene los comandos.
+- El folder `/events` contiene los eventos.
 
 ## Desarrollo ##
 ### Configuracion ###
-En el archivo `.env` no olvides colocar las [credenciales](https://discord.com/developers/applications):
+No olvides llenar las [credenciales](https://discord.com/developers/applications) de tu portal en el archivo `.env` con:
 - `TOKEN` para token secreto generado de tu bot.
 - `GUILD` para el id de tu servidor de pruebas.
 - `CLIENT` para el id del cliente de tu bot de Discord.
 
 ### Comandos ###
-En `package.json` tendras los siguientes comandos disponibles.
+Este proyecto tiene los siguientes comandos disponibles.
 - `npm start` ejecuta el proyecto.
 - `npm run build` retranspila el proyecto.
-- `npm run dev` lanza un watcher para retranspilar y ejecutar el codigo en modo de desarrollo.
+- `npm run dev` para el modo de desarrollo.
 - `npm run link` genera el link de invitacion para agregarlo a tu servidor de pruebas.
-- `npm run register` sincroniza los cambios a tu bot con la API de Discord.
+- `npm run register` sincroniza los comandos a tu bot con los de tu servidor.
 
-## Informacion ##
-Revisa la [guia oficial de Discord](https://discordjs.guide/) para comprender el codigo de este repositorio y revisa la [documentacion](https://discord.js.org/#/docs/) oficial para extender tus conocimientos. 
+
+Comparte el proyecto con cualquiera que quiera empezarse en el desarrollo de bots para Discord!
+Tengo pensado sacar una version con Typescript para cosas mas serias... pero eso ya nesesitara mas documentacion asi que dependera de mi tiempo libre.
