@@ -23,4 +23,3 @@ Este proyecto tiene los siguientes comandos disponibles.
 
 
 Comparte el proyecto con cualquiera que quiera empezarse en el desarrollo de bots para Discord!
-Tengo pensado sacar una version con Typescript para cosas mas serias... pero eso ya nesesitara mas documentacion asi que dependera de mi tiempo libre.
