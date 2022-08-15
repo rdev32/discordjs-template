@@ -1,7 +1,6 @@
 {
   "name": "discord-bot",
   "private": true,
-  "bin": "echo Success",
   "scripts": {
     "start": "node build/index.js",
     "build": "babel src --out-dir build",
