@@ -14,4 +14,4 @@ Este proyecto tiene los siguientes comandos disponibles.
 pruebas.
 - `npm run register` sincroniza los comandos a tu bot con los de tu servidor.
 
-Comparte el proyecto con cualquiera que quiera empezarse en el desarrollo de bots para Discord!
+Comparte el proyecto con cualquiera que quiera empezarse en el desarrollo de bots para Discord
