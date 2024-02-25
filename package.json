@@ -2,23 +2,23 @@
   "name": "discord-bot",
   "private": true,
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "register": "babel-node src/register.js"
+    "start": "node build/index.js",
+    "build": "babel src --out-dir build",
+    "dev": "nodemon -e js -w src --exec \"npm run build && npm start\""
   },
   "dependencies": {
-    "@discordjs/builders": "^1.3.0",
-    "@discordjs/rest": "^1.3.0",
-    "discord-api-types": "^0.37.14",
-    "discord.js": "^14.6.0",
-    "dotenv": "^16.0.3"
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.31.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.19.3",
-    "@babel/node": "^7.19.1",
-    "@babel/plugin-transform-runtime": "^7.19.1",
-    "@babel/preset-env": "^7.19.4",
-    "@babel/runtime": "^7.19.4",
-    "nodemon": "^2.0.20"
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/runtime": "^7.17.9",
+    "nodemon": "^2.0.15"
   }
 }
